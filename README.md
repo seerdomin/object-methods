@@ -34,7 +34,7 @@ var obj = {
 var methods = objectMethods(obj);
 
 console.log(methods);
-// => ["foo", "hello"]
+// => ["foo", "bar"]
 
 ```
 
