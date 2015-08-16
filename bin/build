@@ -6,14 +6,14 @@ var fileSize = require('file-size');
 
 var PACKG_DIR = path.resolve(__dirname, '..');
 var BUILD_DIR = path.join(PACKG_DIR, 'dist');
-var BUILD_CMD = 'browserify -d -s forward -g uglifyify ./index.js | exorcist ./dist/forward-to.min.js.map';
+var BUILD_CMD = 'browserify -d -s objectMethods -g uglifyify ./index.js | exorcist ./dist/object-methods.min.js.map';
 
 shell.cd(PACKG_DIR);
 
 shell.mkdir('-p', BUILD_DIR);
 
 shell.exec(BUILD_CMD, {async: true, silent: true}, function(code, output) {
-    var file = path.resolve('./dist/forward-to.min.js');
+    var file = path.resolve('./dist/object-methods.min.js');
     var size = fileSize(output.length).human('jedec');
 
     fs.writeFileSync(file, output);
