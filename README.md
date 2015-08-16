@@ -2,6 +2,8 @@
 
 Get the list of all of an object's own methods
 
+[![Build Status](https://travis-ci.org/seerdomin/object-methods.svg?branch=master)](https://travis-ci.org/seerdomin/object-methods)
+
 ## Installation
 
 via npm
