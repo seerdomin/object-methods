@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "object-methods",
+  "version": "1.0.0",
+  "description": "Get the list of an object's methods",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./bin/lint",
+    "test": "./bin/test",
+    "coverage": "./bin/coverage",
+    "build": "./bin/build"
+  },
+  "keywords": [
+    "object",
+    "methods"
+  ],
+  "author": "Jean-Noël Namory <seerdomin@gmail.com> (https://github.com/seerdomin)",
+  "license": "MIT",
+  "devDependencies": {
+    "array-difference": "0.0.1",
+    "browserify": "^11.0.1",
+    "exorcist": "^0.4.0",
+    "file-size": "^1.0.0",
+    "istanbul": "^0.3.17",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "shelljs": "^0.5.3",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.2.0",
+    "uglifyify": "^3.0.1"
+  }
+}
